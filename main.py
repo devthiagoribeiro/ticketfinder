@@ -6,7 +6,7 @@ import asyncio
 import os
 
 TOKEN = os.environ.get('TELEGRAM_TOKEN')
-user_id = os.environ.get('TELEGRAM_USER_ID')
+user_id = int(os.environ.get('TELEGRAM_USER_ID'))
 
 MONTHS_PT = {
     1: "Janeiro", 2: "Fevereiro", 3: "Março", 4: "Abril",
