@@ -58,8 +58,6 @@ def find_tickets(month):
 # Function to handle the /start command
 async def start():
     bot = Bot(token=TOKEN)
-    async with bot:
-        await bot.send_message(chat_id=user_id, text='teste')
     month = 11  # ou receba dinamicamente
     datas = find_tickets(month)
     message = format_message(month, datas)
